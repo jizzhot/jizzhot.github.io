@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+.keyboard,
+.calculate,
+.service {
+  width: 300px;
+  height: 362px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.service {
+  width: 250px;
+  overflow: scroll;
+  border: none;
+}
+
+.calculate {
+  width: 300px;
+  height: 327px;
+  border: none;
+}
+
+.money,
+.people {
+  margin: 0 auto 1px;
+  width: 250px;
+  height: 162px;
+  border: 1px solid black;
+}
+
+.splash,
+.pp {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.numbers {
+  width: 72px;
+  height: 72px;
+}
+
+.bwidth {
+  width: 144px;
+  height: 72px;
+}
+
+.swidth {
+  float: right;
+  width: 72px;
+  height: 144px;
+}
+
+.clear {
+  clear: right;
+}
+
+.anotherkey {
+  margin: 20px auto 0;
+  width: 227px;
+  height: 182px;
+  border: 1px solid black;
+}
+
+.abwidth {
+  width: 90px;
+  height: 45px;
+}
+
+.aswidth {
+  width: 45px;
+  height: 90px;
+}
+
+.II,
+.III {
+  float: left;
+  position: relative;
+  width: 135px;
+  height: 90px;
+}
+
+.I,
+.IV {
+  float: left;
+  position: relative;
+  width: 90px;
+  height: 90px;
+}
+
+.ii1 {
+  position: absolute;
+  left: 0;
+  top: 0
+}
+
+.ii2,
+.iii2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.ii3,
+.iii3 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.i1,
+.iv1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.iii1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: 45px;
+}
+
+.iii {
+  position: absolute;
+  top: 0;
+  left: 45px;
+  width: 45px;
+  height: 45px;
+}
+
+@media (min-width: 301px) {
+  .keyboard,
+  .calculate,
+  .service {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 863px) {
+  .firstrow,
+  .secondrow {
+    max-width: 820px;
+  }
+
+  .firstrow {
+    margin: 0 auto;
+  }
+
+  .secondrow {
+    margin: 30px auto;
+  }
+
+  .service {
+    float: left;
+    width: 493px;
+  }
+
+  .calculate {
+    float: left;
+    width: 300px;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  .keyboard {
+    float: left;
+    width: 300px;
+    margin-right: 30px;
+  }
+
+  .anotherkey {
+    float: left;
+    width: 227px;
+  }
+}
