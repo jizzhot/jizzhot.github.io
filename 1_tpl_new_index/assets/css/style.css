@@ -1,0 +1,270 @@
+/* fullPage 效果 */
+.page1 {
+    position: relative;
+    background: url('../images/background1.jpg') center center / cover no-repeat;
+}
+.page2 {
+    position: relative;
+    background: url('../images/background2.jpg') center center / cover no-repeat;
+}
+.page3 {
+    position: relative;
+    background: url('../images/background3.jpg') center center / cover no-repeat;
+}
+
+/* fullPage.js 的 class */
+.fp-tableCell {
+    display: block;
+}
+
+/* bootstrap */
+.nav.nav-tabs {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* 手機換頁按鈕 CSS */
+.mobile-bottom {
+    text-align: right;
+    display: none;
+    position: fixed;
+    bottom: -1px;
+    left: 0px;
+    padding: 15px 15px;
+    z-index: 111;
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,.1);
+    background-color: #2d2f31;
+}
+@media (max-width: 768px) {
+    .mobile-bottom {
+        display: block;
+    }
+    .container {
+        overflow-y: scroll !important;
+        height: 100%;
+    }
+}
+.mobile-up {
+    margin-right: 15px;
+    float: right;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.2);
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+.mobile-down {
+    margin-right: 15px;
+    float: right;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,.2);
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+}
+.mobile-up > span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    margin-left: 12px;
+    margin-top: 9px;
+}
+.mobile-down > span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    margin-top: 13px;
+    margin-left: 12px;
+}
+.fp-viewing-1 .mobile-down {
+    display: none;
+}
+.fp-viewing-3 .mobile-up {
+    display: none;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 3px;
+}
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+::-webkit-scrollbar-thumb {
+    background: #a31f24;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #a31f24;
+}
+
+/* fullPage.js page1 */
+.like-buy-user {
+    position: absolute;
+    top: 38%;
+    right: 25px;
+}
+.right-side-link {
+    display: block;
+    padding: 10px;
+}
+.fa-heart-o,
+.fa-shopping-cart,
+.fa-user-o {
+    color: white;
+}
+.fa-heart-o:hover,
+.fa-shopping-cart:hover,
+.fa-user-o:hover {
+    color: #a31f24;
+}
+.search-container {
+    position: relative;
+    top: 73%;
+}
+.search-input,
+.select-style {
+    background-color: rgba(255,255,255,.9);
+    border-radius: 0;
+}
+.search-input:focus,
+.select-style:focus {
+    background-color: #fff;
+}
+.btn-customer {
+    width: 90px;
+    border-radius: 0;
+    color: #fff;
+    background-color: #a31f24;
+    border-color: rgba(49,113,109,1);
+}
+.btn-customer:hover {
+    color: #fff;
+    border-color: #fff;
+}
+.btn-customer:focus, .btn-customer.focus {
+    box-shadow: 0 0 0 2px rgba(49,113,109,.5);
+}
+
+/* 最新消息 & 知識版權 CSS */
+a.nav-link {
+    color: white;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active { /* bootstrap */
+    color: #a31f24;
+    background: transparent;
+    border-color: transparent;
+}
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus { /* bootstrap */
+    color: #a31f24;
+    border-color: transparent;
+  }
+.news-content,
+.knowledge-content {
+    color: white;
+    padding: 15px;
+}
+.news-img,
+.knowledge-img {
+    max-width: 100%;
+    box-shadow: 10px 10px #2b2b2b;
+}
+.news-word,
+.knowledge-word {
+    position: relative;
+}
+.news-title,
+.know-title {
+    font-size: 20px;
+}
+.news-title,
+.news-desc,
+.know-title,
+.know-desc {
+    position: absolute;
+    left: 10px;
+    display: none;
+}
+.news-title,
+.know-title {
+    position: absolute;
+    bottom: 37px;
+}
+.news-desc,
+.know-desc {
+    position: absolute;
+    bottom: -3px;
+}
+.news-content:hover .news-title,
+.news-content:hover .news-desc,
+.knowledge-content:hover .know-title,
+.knowledge-content:hover .know-desc {
+    display: block;
+}
+
+/* 本月推薦 */
+.recommend-content {
+    position: relative;
+    color: white;
+}
+.recommend-img {
+    max-width: 100%;
+}
+.recommend-word {
+    position: absolute;
+    top: 45%;
+    left: 11px;
+    display: none;
+}
+.recommend-content:hover .recommend-word {
+    display: block;
+}
+.recommend-content:hover .recommend-img {
+    opacity: .4;
+}
+.recommend-title {
+    font-size: 20px;
+}
+
+/* 最新產品 */
+.new-product-content {
+    color: white;
+}
+.new-product-img {
+    max-width: 100%;
+}
+.new-product-word {
+    position: relative;
+    display: none;
+}
+.new-product-title {
+    position: absolute;
+    right: 25px;
+    bottom: 34px;
+    font-size: 20px;
+}
+.new-product-desc {
+    position: absolute;
+    right: 25px;
+    bottom: 1px;
+}
+.new-product-content:hover .new-product-word {
+    display: block;
+}
+.new-product-content:hover .new-product-img {
+    opacity: .4;
+}
