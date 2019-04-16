@@ -97,7 +97,7 @@
 }
 
 /* custom scrollbar */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 3px;
 }
 ::-webkit-scrollbar-track {
@@ -108,7 +108,7 @@
 }
 ::-webkit-scrollbar-thumb:hover{
     background: #a31f24;
-}
+} */
 
 /* fullPage.js page1 */
 .like-buy-user {
