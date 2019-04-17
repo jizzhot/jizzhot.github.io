@@ -42,7 +42,7 @@
     }
     .container {
         overflow-y: scroll !important;
-        height: 100%;
+        height: 83%;
     }
 }
 .mobile-up {
@@ -158,7 +158,7 @@
     box-shadow: 0 0 0 2px rgba(49,113,109,.5);
 }
 
-/* 最新消息 & 知識版權 CSS */
+/* fullPage.js page2 */
 a.nav-link {
     color: white;
 }
@@ -172,7 +172,9 @@ a.nav-link {
 .nav-tabs .nav-link:focus { /* bootstrap */
     color: #a31f24;
     border-color: transparent;
-  }
+}
+
+/* 最新消息 & 知識版權 CSS */
 .news-content,
 .knowledge-content {
     color: white;
@@ -199,6 +201,14 @@ a.nav-link {
     left: 10px;
     display: none;
 }
+@media (max-width: 576px) {
+    .news-title,
+    .news-desc,
+    .know-title,
+    .know-desc {
+        display: block;
+    }
+}
 .news-title,
 .know-title {
     position: absolute;
@@ -215,6 +225,10 @@ a.nav-link {
 .knowledge-content:hover .know-desc {
     display: block;
 }
+.news-content:hover .news-img,
+.knowledge-content:hover .knowledge-img {
+    opacity: .4;
+}
 
 /* 本月推薦 */
 .recommend-content {
@@ -223,6 +237,7 @@ a.nav-link {
 }
 .recommend-img {
     max-width: 100%;
+    box-shadow: 10px 10px #2b2b2b;
 }
 .recommend-word {
     position: absolute;
@@ -230,14 +245,19 @@ a.nav-link {
     left: 11px;
     display: none;
 }
+@media (max-width: 576px) {
+    .recommend-word {
+        display: block;
+    }
+}
+.recommend-title {
+    font-size: 20px;
+}
 .recommend-content:hover .recommend-word {
     display: block;
 }
 .recommend-content:hover .recommend-img {
     opacity: .4;
-}
-.recommend-title {
-    font-size: 20px;
 }
 
 /* 最新產品 */
@@ -250,6 +270,11 @@ a.nav-link {
 .new-product-word {
     position: relative;
     display: none;
+}
+@media (max-width: 576px) {
+    .new-product-word {
+        display: block;
+    }
 }
 .new-product-title {
     position: absolute;
@@ -267,4 +292,67 @@ a.nav-link {
 }
 .new-product-content:hover .new-product-img {
     opacity: .4;
+}
+
+/* 熱門活動 */
+.slick-dots li.slick-active button:before {
+    color: #fff;
+    opacity: 1;
+}
+.slick-dots li button:before {
+    color: #a31f24;
+    opacity: 1;
+}
+.slick-dots {
+    bottom: -57px;
+}
+.slick-next,
+.slick-prev {
+    left: 8888px;
+}
+.activity-photo {
+    max-width: 93%;
+}
+.activity-title {
+    font-size: 20px;
+    color: #fff;
+}
+.activity-desc {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #bfbcbc;
+}
+.activity-link {
+    color: #bfbcbc;
+}
+.activity-link:hover {
+    text-decoration: none;
+    color: #a31f24;
+}
+
+/* 關於典匠 */
+.footer-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+.footer-link a {
+    color: #fff;
+}
+.footer-link a:hover {
+    text-decoration: none;
+    color: #a31f24;
+}
+.fa-facebook-square {
+    color: #fff;
+}
+.fa-facebook-square:hover {
+    color: #3b5998;
+}
+.pixnet-pic {
+    position: relative;
+    top: -13px;
+    width: 41px;
+    height: 43px;
 }

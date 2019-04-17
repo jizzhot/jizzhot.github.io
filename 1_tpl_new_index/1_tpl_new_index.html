@@ -9,12 +9,11 @@
 
         <title>典匠官網</title>
 
-        <!-- 引入 Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/jquery.fullpage.min.css">
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/slick/slick.min.css">
+        <link rel="stylesheet" href="assets/css/slick/slick-theme.min.css">
 
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
@@ -66,7 +65,7 @@
                 </div>
 
                 <div class="container">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="news-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="true">最新消息</a>
                         </li>
@@ -304,17 +303,56 @@
 
                         <!-- 免費資源 -->
                         <div class="tab-pane fade" id="free" role="tabpanel" aria-labelledby="free-tab">
-                            <h1>免費資源</h1>
+
                         </div>
 
                         <!-- 熱門活動 -->
                         <div class="tab-pane fade" id="hot" role="tabpanel" aria-labelledby="hot-tab">
-                            <h1>熱門活動</h1>
+                            <div class="container">
+                                <div class="js-slick-hot">
+                                    <div class="activity">
+                                        <img class="activity-photo" src="assets/images/15.jpg" alt="">
+                                        <h1 class="activity-title">IC之音竹科廣播專訪典匠</h1>
+                                        <p class="activity-desc">資深媒體人王純瑞於IC之音竹科廣播，專訪典匠資訊董事長江憲鴻。</p>
+                                        <a class="activity-link" href="#">(繼續閱讀)</a>
+                                    </div>
+                                    <div class="activity">
+                                        <img class="activity-photo" src="assets/images/16.jpg" alt="">
+                                        <h1 class="activity-title">典匠參加資策會國際論壇</h1>
+                                        <p class="activity-desc">典匠資訊董事長江憲鴻受邀於10月18日參加，由資策會主辦的文化部文創產業發展趨勢與中介經紀國際論壇，以「數位</p>
+                                        <a class="activity-link" href="#">(繼續閱讀)</a>
+                                    </div>
+                                    <div class="activity">
+                                        <img class="activity-photo" src="assets/images/17.jpg" alt="">
+                                        <h1 class="activity-title">建大集團投資典匠資訊</h1>
+                                        <p class="activity-desc">股票上市績優公司建大集團決定投資典匠資訊股份有限公司，成為典匠公司主要股東之一。建大集團成立於1962年，</p>
+                                        <a class="activity-link" href="#">(繼續閱讀)</a>
+                                    </div>
+                                    <div class="activity">
+                                        <img class="activity-photo" src="assets/images/15.jpg" alt="">
+                                        <h1 class="activity-title">IC之音竹科廣播專訪典匠</h1>
+                                        <p class="activity-desc">資深媒體人王純瑞於IC之音竹科廣播，專訪典匠資訊董事長江憲鴻。</p>
+                                        <a class="activity-link" href="#">(繼續閱讀)</a>
+                                    </div>
+                                    <div class="activity">
+                                        <img class="activity-photo" src="assets/images/16.jpg" alt="">
+                                        <h1 class="activity-title">典匠參加資策會國際論壇</h1>
+                                        <p class="activity-desc">典匠資訊董事長江憲鴻受邀於10月18日參加，由資策會主辦的文化部文創產業發展趨勢與中介經紀國際論壇，以「數位</p>
+                                        <a class="activity-link" href="#">(繼續閱讀)</a>
+                                    </div>
+                                    <div class="activity">
+                                        <img class="activity-photo" src="assets/images/17.jpg" alt="">
+                                        <h1 class="activity-title">建大集團投資典匠資訊</h1>
+                                        <p class="activity-desc">股票上市績優公司建大集團決定投資典匠資訊股份有限公司，成為典匠公司主要股東之一。建大集團成立於1962年，</p>
+                                        <a class="activity-link" href="#">(繼續閱讀)</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- 知名客戶 -->
                         <div class="tab-pane fade" id="clients" role="tabpanel" aria-labelledby="clients-tab">
-                            <h1>知名客戶</h1>
+
                         </div>
                     </div>
                 </div>
@@ -327,44 +365,101 @@
                     <a class="right-side-link" href="#"><i class="fa fa-shopping-cart fa-3x" aria-hidden="true"></i></a>
                     <a class="right-side-link" href="#"><i class="fa fa-user-o fa-3x" aria-hidden="true"></i></a>
                 </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                            <div class="footer-item">
+                                <h1 class="footer-title">關於典匠</h1>
+                                <div class="footer-link"><a href="#">公司簡介</a></div>
+                                <div class="footer-link"><a href="#">理念與願景</a></div>
+                                <div class="footer-link"><a href="#">創意種子</a></div>
+                                <div class="footer-link"><a href="#">福利</a></div>
+                                <div class="footer-link"><a href="#">歷史沿革</a></div>
+                                <div class="footer-link"><a href="#">最新消息</a></div>
+                                <div class="footer-link"><a href="#">聯絡我們</a></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                            <div class="footer-item">
+                                <h1 class="footer-title">產品服務</h1>
+                                <div class="footer-link"><a href="#">自由載方案</a></div>
+                                <div class="footer-link"><a href="#">典匠創意王</a></div>
+                                <div class="footer-link"><a href="#">雲端文創資源庫</a></div>
+                                <div class="footer-link"><a href="#">影片製作</a></div>
+                                <div class="footer-link"><a href="#">圖庫管理系統</a></div>
+                                <div class="footer-link"><a href="#">品牌列表</a></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                            <div class="footer-item">
+                                <h1 class="footer-title">法律櫥窗</h1>
+                                <div class="footer-link"><a href="#">版權聲明</a></div>
+                                <div class="footer-link"><a href="#">著作權櫥窗</a></div>
+                                <div class="footer-link"><a href="#">隱私權條款</a></div>
+                                <div class="footer-link"><a href="#">數位影像授權類別與規範</a></div>
+                                <div class="footer-link"><a href="#">如何慎選合法專業圖庫商</a></div>
+                                <div class="footer-link"><a href="#">正版素材行列</a></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                            <div class="footer-item">
+                                <h1 class="footer-title">會員專區</h1>
+                                <div class="footer-link"><a href="#">會員管理</a></div>
+                                <div class="footer-link"><a href="#">使用說明</a></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                            <div class="footer-item">
+                                <h1 class="footer-title">典匠價值</h1>
+                                <div class="footer-link"><a href="#">專業分享</a></div>
+                                <div class="footer-link"><a href="#">Q&A</a></div>
+                                <div class="footer-link"><a href="#">社會責任</a></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                            <div class="footer-item">
+                                <h1 class="footer-title">供稿人服務</h1>
+                                <div class="footer-link"><a href="#">我要投稿</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-2 offset-xl-10 col-lg-2 offset-lg-10 col-md-2 offset-md-10 col-sm-12 col-12">
+                            <div class="social-group">
+                                <a class="fb-link" href="https://www.facebook.com/imagedj"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+                                <a class="pixnet-link" href="http://imagedj.pixnet.net/blog"><img class="pixnet-pic" src="assets/images/pixnet1.png" alt="ImageDJ Pixnet"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6">
+                            <div class="languages">
+                                <span>語言選擇</span>
+                                <span class="great-than-sign"> ></span>
+                                <div class="lang-choices">
+                                    <a class="trad-chinese" href="#"><span>繁中</span></a>
+                                    <a class="simp-chinese" href="#"><span>简中</span></a>
+                                    <a class="english" href="#"><span>English</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6">
+                            <span class="imagedj-trademark">© 2019 ImageDJ Corporation. All rights reserved</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-         <!-- Bootstrap & jQuery -->
-         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-
+         <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+         <script src="assets/js/bootstrap.min.js"></script>
+         <script src="assets/js/popper.min.js"></script>
          <script src="assets/js/jquery.fullpage.min.js"></script>
+         <script src="assets/js/slick.min.js"></script>
 
-         <script>
-             $(document).ready(function () {
-                $('#fullpage').fullpage({
-                    anchors: ['1', '2', '3'],
-                });
-
-                $(window).resize(function () {
-                    let winWidth = $(window).width();
-                    if (winWidth < 769) {
-                        $.fn.fullpage.setAllowScrolling(false);
-                    } else {
-                        $.fn.fullpage.setAllowScrolling(true);
-                    }
-                });
-
-                let winWidth = $(window).width();
-                if (winWidth < 769) {
-                    $.fn.fullpage.setAllowScrolling();
-                }
-
-                $('.mobile-up').click(function () {
-                    $.fn.fullpage.moveSectionDown();
-                });
-
-                $('.mobile-down').click(function () {
-                    $.fn.fullpage.moveSectionUp();
-                });
-             });
-         </script>
+         <script src="assets/js/main.js"></script>
     </body>
 </html>
