@@ -356,3 +356,32 @@ a.nav-link {
     width: 41px;
     height: 43px;
 }
+.languages {
+    display: inline-block;
+    color: white;
+}
+.languages:hover {
+    cursor: pointer;
+    color: #a31f24;
+}
+.lang-choices {
+    display: none;
+}
+.languages:hover .lang-choices {
+    display: inline-block;
+}
+.trad-chinese,
+.simp-chinese,
+.english {
+    padding-left: 10px;
+    color: #fff;
+}
+.trad-chinese:hover,
+.simp-chinese:hover,
+.english:hover {
+    text-decoration: none;
+    color: #a31f24;
+}
+.imagedj-trademark {
+    color: white;
+}
